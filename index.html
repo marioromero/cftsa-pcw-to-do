@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practico 2</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Alertify CSS -->
+    <link rel="stylesheet" href="css/alertify.css">
+    <!-- DataTable CSS -->
+    <link rel="stylesheet" href="css/datatable.css">
+    <link rel="stylesheet" href="css/jqueryui.css">
+    <!-- CSS personalizado -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body class="container">
+
+    <h1 class="mt-4 mb-4">Agencia de Publicidad - To Do App</h1>
+
+    <section id="employee-section" class="mb-4">
+        <h3>Formulario de ingreso de empleado</h3>
+        <!-- Formulario de ingreso de empleado -->
+        <form id="employee-form" class="mb-3">
+            <div class="mb-3">
+                <label for="employee-name" class="form-label">Nombre del empleado:</label>
+                <input type="text" class="form-control" id="employee-name" name="employee-name">
+            </div>
+            <button type="submit" class="btn btn-primary" id="add-employee">Agregar empleado</button>
+        </form>
+    </section>
+
+    <section id="task-section" class="mb-4">
+        <h3>Formulario para asignar tareas</h3>
+        <!-- Formulario para asignar tareas -->
+        <form id="task-form" class="mb-3">
+            <div class="mb-3">
+                <label for="task-description" class="form-label">Descripción de la tarea:</label>
+                <input type="text" class="form-control" id="task-description" name="task-description">
+            </div>
+            <div class="mb-3">
+                <label for="assigned-user" class="form-label">Usuario asignado:</label>
+                <input type="text" id="assigned-user" class="form-control" name="assigned-user">
+            </div>
+            <div class="mb-3">
+                <label for="priority" class="form-label">Prioridad:</label>
+                <select id="priority" class="form-select" name="priority">
+                    <option value="alta">Alta</option>
+                    <option value="media">Media</option>
+                    <option value="baja">Baja</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary" id="add-task">Guardar tarea</button>
+            <button type="button" id="clear-task-form" class="btn btn-secondary">Limpiar campos</button>
+        </form>
+    </section>
+
+    <section id="task-table">
+        <h3>Lista de tareas asignadas</h3>
+        <!-- Tabla de tareas -->
+        <table id="data-table" class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Descripción</th>
+                    <th>Usuario asignado</th>
+                    <th>Prioridad</th>
+                    <th>Estado</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody id="content-table">
+                <!-- Aquí se cargarán dinámicamente las filas de la tabla -->
+            </tbody>
+        </table>
+    </section>
+
+    <!-- JQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- JqueryUI JS -->
+    <script src="js/jqueryui.js"></script>
+    <!-- Datatables -->
+    <script src="js/datatable.js"></script>
+    <!-- Sweet Alert -->
+    <script src="js/sweetAlert.js"></script>
+    <!-- Alertify -->
+    <script src="js/alertify.js"></script>
+    <!-- toda la logica -->
+    <script src="js/scripts.js"></script>
+</body>
+
+</html>

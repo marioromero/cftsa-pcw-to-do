@@ -1,0 +1,50 @@
+/* Estilos para títulos y labels */
+h1,
+h3 {
+    color: #333;
+}
+
+label {
+    font-weight: bold;
+}
+
+/* Colores de fondo */
+body {
+    background-color: #f8f9fa;
+}
+
+/* Estilo para el menú desplegable de Autocomplete */
+.ui-autocomplete {
+    max-height: 200px;
+    /* Altura máxima del menú desplegable */
+    overflow-y: auto;
+    /* Permitir desplazamiento vertical si el contenido excede la altura máxima */
+    background-color: white;
+    /* Color de fondo */
+    border: 1px solid #ccc;
+    /* Borde */
+}
+
+/* Estilo para los elementos de la lista de sugerencias */
+.ui-menu-item {
+    padding: 5px 10px;
+    /* Espaciado interno */
+    cursor: pointer;
+    /* Cursor al pasar sobre los elementos */
+}
+
+/* Estilo para los elementos de la lista de sugerencias cuando están resaltados */
+.ui-menu-item-wrapper.ui-state-focus {
+    background-color: #f0f0f0;
+    /* Color de fondo cuando está resaltado */
+    color: #333;
+    /* Color del texto cuando está resaltado */
+}
+
+/* Estilo para los elementos de la lista de sugerencias cuando se realiza un hover */
+.ui-menu-item:hover {
+    background-color: #f0f0f0;
+    /* Color de fondo cuando se realiza un hover */
+    color: #333;
+    /* Color del texto cuando se realiza un hover */
+}
